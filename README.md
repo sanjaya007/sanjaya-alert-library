@@ -95,6 +95,7 @@ ALERT.setDefault({
   position: "topLeft",
   timeOut: "3",
 });
+
 // If you set default config like this, you can use with two parameters.
 ALERT.init("success", "This is Sanjaya alert.");
 
@@ -113,6 +114,7 @@ ALERT.setDefault({
   position: "topLeft",
   timeOut: "3",
 });
+
 // If you want your own icon and message which are supposed to be used as same in multiple places.
 ALERT.init("default");
 ```

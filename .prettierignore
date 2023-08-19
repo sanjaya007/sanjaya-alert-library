@@ -1,0 +1,11 @@
+alert.min.css
+./css/alert.min.css
+./assets/css/alert.min.css
+./src/css/alert.min.css
+./dist/css/alert.min.css
+
+alert.min.js
+./css/alert.min.js
+./assets/css/alert.min.js
+./src/css/alert.min.js
+./dist/css/alert.min.js

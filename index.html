@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sanjaya Alert</title>
+    <!-- font awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- sanjaya css  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-css-library@4.0/dist/css/sanjaya.min.css"
+      crossorigin="anonymous"
+    />
+    <!-- custom css  -->
+    <link rel="stylesheet" href="./src/css/alert.css" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main flex-css-column fg-20 fw-full">
+      <button onclick="ALERT.init('success', 'Hello World !')">Success</button>
+      <button onclick="ALERT.init('info', 'Hello World !')">Info</button>
+      <button onclick="ALERT.init('warning', 'Hello World !')">Warning</button>
+      <button onclick="ALERT.init('error', 'Hello World !')">Error</button>
+    </div>
+    <script src="./src/js/alert.js"></script>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>

@@ -7,7 +7,7 @@ ALERT Demo - [https://sanjaya-alert-library.netlify.app/](https://sanjaya-alert-
 Add CSS to head.
 
 ```js
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/css/alert.min.css" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/css/alert.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 ```
 
 ## JS - CDN Link
@@ -15,7 +15,7 @@ Add CSS to head.
 Add JS to head or body.
 
 ```js
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/js/alert.min.js" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/js/alert.min.js"></script>
 ```
 
 ## Font Awesome - CDN Link

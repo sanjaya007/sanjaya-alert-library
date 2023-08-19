@@ -20,7 +20,7 @@
     />
     <!-- custom css  -->
     <link rel="stylesheet" href="./src/css/alert.css" />
-    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- jquery -->
     <script
@@ -30,13 +30,24 @@
     ></script>
   </head>
   <body>
-    <div class="main flex-css-column fg-20 fw-full">
-      <button onclick="ALERT.init('success', 'Hello World !')">Success</button>
-      <button onclick="ALERT.init('info', 'Hello World !')">Info</button>
-      <button onclick="ALERT.init('warning', 'Hello World !')">Warning</button>
-      <button onclick="ALERT.init('error', 'Hello World !')">Error</button>
+    <div class="main flex-css-column fg-20">
+      <button class="alert-btns" data-status="success">Success</button>
+      <button class="alert-btns" data-status="info">Info</button>
+      <button class="alert-btns" data-status="warning">Warning</button>
+      <button class="alert-btns" data-status="error">Error</button>
+      <div class="links flex-css-column fg-10 fpt-30">
+        <a class="flex-css" href="https://github.com/sanjaya007">
+          Github: sanjaya007
+        </a>
+        <a
+          class="flex-css"
+          href="https://github.com/sanjaya007/sanjaya-alert-library"
+        >
+          Full Documentation
+        </a>
+      </div>
     </div>
     <script src="./src/js/alert.js"></script>
-    <script src="./src/js/script.js"></script>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

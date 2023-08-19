@@ -1,32 +1,32 @@
-let alertTimeout;
-
-const alertPositionArray = [
-  "topRight",
-  "topLeft",
-  "topCenter",
-  "bottomRight",
-  "bottomLeft",
-  "bottomCenter",
-];
-
-const AlertDefaultData = {
-  icon: "<i class='fa-solid fa-circle-info'></i>",
-  message: "This is Sanjaya alert.",
-  position: "topRight",
-  timeOut: "5000",
-};
-
 const ALERT = {
+  alertTimeout: null,
+
+  alertPositionArray: [
+    "topRight",
+    "topLeft",
+    "topCenter",
+    "bottomRight",
+    "bottomLeft",
+    "bottomCenter",
+  ],
+
+  alertDefaultData: {
+    icon: "<i class='fa-solid fa-circle-info'></i>",
+    message: "This is Sanjaya alert.",
+    position: "topRight",
+    timeOut: "5000",
+  },
+
   setDefaultObjValidation: function (key, obj) {
     if (!obj[key] || obj[key].trim() === "") {
-      return AlertDefaultData[key];
+      return this.alertDefaultData[key];
     }
 
     if (key === "position") {
-      if (alertPositionArray.indexOf(obj[key]) >= 0) {
+      if (this.alertPositionArray.indexOf(obj[key]) >= 0) {
         return obj[key];
       } else {
-        return AlertDefaultData[key];
+        return this.alertDefaultData[key];
       }
     }
 
@@ -36,7 +36,7 @@ const ALERT = {
       if (decimalRegex.test(obj[key])) {
         return obj[key] * 1000;
       } else {
-        return AlertDefaultData[key];
+        return this.alertDefaultData[key];
       }
     }
 
@@ -44,8 +44,8 @@ const ALERT = {
   },
 
   setDefault: function (obj) {
-    for (const key in AlertDefaultData) {
-      AlertDefaultData[key] = this.setDefaultObjValidation(key, obj);
+    for (const key in this.alertDefaultData) {
+      this.alertDefaultData[key] = this.setDefaultObjValidation(key, obj);
     }
   },
 
@@ -59,12 +59,12 @@ const ALERT = {
     let messageText = message
       ? message.trim() !== ""
         ? message.trim()
-        : AlertDefaultData.message
-      : AlertDefaultData.message;
+        : this.alertDefaultData.message
+      : this.alertDefaultData.message;
 
     let setPositionOrTime = null;
-    let position = AlertDefaultData.position;
-    let timeOut = AlertDefaultData.timeOut;
+    let position = this.alertDefaultData.position;
+    let timeOut = this.alertDefaultData.timeOut;
 
     const decimalRegex = /^(?:\d+|\d*\.\d+)$/;
 
@@ -73,7 +73,7 @@ const ALERT = {
         timeOut = positionOrTime * 1000;
         setPositionOrTime = "time";
       } else {
-        if (alertPositionArray.indexOf(positionOrTime) >= 0) {
+        if (this.alertPositionArray.indexOf(positionOrTime) >= 0) {
           position = positionOrTime;
         } else {
           console.warn(
@@ -151,7 +151,7 @@ const ALERT = {
       case "default":
         this.showAlert(
           "default",
-          AlertDefaultData.icon,
+          this.alertDefaultData.icon,
           messageText,
           position,
           timeOut
@@ -219,11 +219,11 @@ const ALERT = {
   },
 
   timeout: function (time) {
-    clearTimeout(alertTimeout);
+    clearTimeout(this.alertTimeout);
     $("#sanjayaAlertBox").removeClass("sanjaya-hide");
     $("#sanjayaAlertBox").addClass("sanjaya-show");
 
-    alertTimeout = setTimeout(function () {
+    this.alertTimeout = setTimeout(function () {
       $("#sanjayaAlertBox").removeClass("sanjaya-show");
       $("#sanjayaAlertBox").addClass("sanjaya-hide");
     }, time);

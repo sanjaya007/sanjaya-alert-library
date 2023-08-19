@@ -22,6 +22,5 @@ $(".alert-btns").on("click", function () {
   clearAndRestartInterval();
 });
 
-// Start the interval initially
-initAlert("default"); // Initial alert
-startAlertInterval(); // Start subsequent alerts interval
+initAlert("default");
+startAlertInterval();

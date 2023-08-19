@@ -198,11 +198,11 @@
 }
 
 .sanjaya-alert-box.sanjaya-success-alert .sanjaya-alert-close:hover {
-  background-color: #218556;
+  background-color: #1a754b;
 }
 
 .sanjaya-alert-box.sanjaya-info-alert .sanjaya-alert-close:hover {
-  background-color: #408dc0;
+  background-color: #3c8abe;
 }
 
 .sanjaya-alert-box.sanjaya-warning-alert .sanjaya-alert-close:hover {
@@ -210,7 +210,7 @@
 }
 
 .sanjaya-alert-box.sanjaya-error-alert .sanjaya-alert-close:hover {
-  background-color: #dc3545;
+  background-color: #be3442;
 }
 
 .sanjaya-alert-box .sanjaya-alert-close:active i {

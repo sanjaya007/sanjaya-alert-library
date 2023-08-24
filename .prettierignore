@@ -5,7 +5,11 @@ alert.min.css
 ./dist/css/alert.min.css
 
 alert.min.js
-./css/alert.min.js
-./assets/css/alert.min.js
-./src/css/alert.min.js
-./dist/css/alert.min.js
+./js/alert.min.js
+./assets/js/alert.min.js
+./src/js/alert.min.js
+./dist/js/alert.min.js
+./jq/alert.min.js
+./assets/jq/alert.min.js
+./src/jq/alert.min.js
+./dist/jq/alert.min.js

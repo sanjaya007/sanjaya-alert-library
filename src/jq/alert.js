@@ -170,13 +170,8 @@ const ALERT = {
   },
 
   showAlert: function (type, icon, message, position, timeOut) {
-    const sanjayaAlertBox = document.getElementById("sanjayaAlertBox");
-    if (sanjayaAlertBox) {
-      sanjayaAlertBox.remove();
-    }
-    const body = document.querySelector("body");
-    body.insertAdjacentHTML(
-      "beforeend",
+    $("#sanjayaAlertBox").remove();
+    $("body").append(
       this.html(`sanjaya-${type}-alert`, icon, message, position)
     );
     this.clickable();
@@ -187,16 +182,16 @@ const ALERT = {
     return `<div class="sanjaya-alert-box ${type} ${this.setPositionClass(
       position
     )} sanjaya-show" id="sanjayaAlertBox">
-                      <div class="sanjaya-alert-icon">
-                      ${icon}
-                      </div>
-                      <div class="sanjaya-alert-message" id="sanjayaAlertMessage">
-                          <p>${message}</p>
-                      </div>
-                      <div class="sanjaya-alert-close" id="sanjayaAlertClose">
-                          <i class="fas fa-times"></i>
-                      </div>
-                  </div>`;
+                    <div class="sanjaya-alert-icon">
+                    ${icon}
+                    </div>
+                    <div class="sanjaya-alert-message" id="sanjayaAlertMessage">
+                        <p>${message}</p>
+                    </div>
+                    <div class="sanjaya-alert-close" id="sanjayaAlertClose">
+                        <i class="fas fa-times"></i>
+                    </div>
+                </div>`;
   },
 
   setPositionClass: function (position) {
@@ -217,31 +212,20 @@ const ALERT = {
   },
 
   clickable: function () {
-    const sanjayaAlertClose = document.getElementById("sanjayaAlertClose");
-    if (sanjayaAlertClose) {
-      sanjayaAlertClose.addEventListener("click", function () {
-        const sanjayaAlertBox = document.getElementById("sanjayaAlertBox");
-        if (sanjayaAlertBox) {
-          sanjayaAlertBox.classList.remove("sanjaya-show");
-          sanjayaAlertBox.classList.add("sanjaya-hide");
-        }
-      });
-    }
+    $("#sanjayaAlertClose").on("click", function () {
+      $("#sanjayaAlertBox").removeClass("sanjaya-show");
+      $("#sanjayaAlertBox").addClass("sanjaya-hide");
+    });
   },
 
   timeout: function (time) {
     clearTimeout(this.alertTimeout);
-    const sanjayaAlertBox = document.getElementById("sanjayaAlertBox");
-    if (sanjayaAlertBox) {
-      sanjayaAlertBox.classList.remove("sanjaya-hide");
-      sanjayaAlertBox.classList.add("sanjaya-show");
+    $("#sanjayaAlertBox").removeClass("sanjaya-hide");
+    $("#sanjayaAlertBox").addClass("sanjaya-show");
 
-      this.alertTimeout = setTimeout(function () {
-        if (sanjayaAlertBox) {
-          sanjayaAlertBox.classList.remove("sanjaya-show");
-          sanjayaAlertBox.classList.add("sanjaya-hide");
-        }
-      }, time);
-    }
+    this.alertTimeout = setTimeout(function () {
+      $("#sanjayaAlertBox").removeClass("sanjaya-show");
+      $("#sanjayaAlertBox").addClass("sanjaya-hide");
+    }, time);
   },
 };

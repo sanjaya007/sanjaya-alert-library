@@ -10,12 +10,20 @@ Add CSS to head.
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/css/alert.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 ```
 
-## JS - CDN Link
+## JS (Vanilla/Core) - CDN Link
 
 Add JS to head or body.
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/js/alert.min.js"></script>
+```
+
+## jQuery - CDN Link
+
+User this link if you want to use jQuery.
+
+```js
+<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/jq/alert.min.js"></script>
 ```
 
 ## Font Awesome - CDN Link

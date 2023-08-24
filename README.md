@@ -7,7 +7,7 @@ ALERT Demo - [https://sanjaya-alert-library.netlify.app/](https://sanjaya-alert-
 Add CSS to head.
 
 ```js
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/css/alert.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.1/dist/css/alert.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
 ```
 
 ## JS (Vanilla/Core) - CDN Link
@@ -15,15 +15,15 @@ Add CSS to head.
 Add JS to head or body. If you are working in jQuery, you can use Jquery based alert link.
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/js/alert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.1/dist/js/alert.min.js"></script>
 ```
 
-## jQuery - CDN Link
+## jQuery Based - CDN Link
 
 Use this alert link if you want to use jQuery based alert.
 
 ```js
-<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/jq/alert.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.1/dist/jq/alert.min.js"></script>
 ```
 
 ## Font Awesome - CDN Link

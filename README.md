@@ -12,7 +12,7 @@ Add CSS to head.
 
 ## JS (Vanilla/Core) - CDN Link
 
-Add JS to head or body.
+Add JS to head or body. If you are working in jQuery, you can use Jquery based alert link.
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/js/alert.min.js"></script>
@@ -20,7 +20,7 @@ Add JS to head or body.
 
 ## jQuery - CDN Link
 
-User this link if you want to use jQuery.
+Use this alert link if you want to use jQuery based alert.
 
 ```js
 <script src="https://cdn.jsdelivr.net/gh/sanjaya007/sanjaya-alert-library@1.0/dist/jq/alert.min.js"></script>
